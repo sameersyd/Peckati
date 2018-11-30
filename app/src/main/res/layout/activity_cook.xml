@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haze.sameer.peckati.CookActivity">
+
+    <RelativeLayout
+        android:id="@+id/buy_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#354069">
+
+        <ImageView
+            android:id="@+id/buy_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/x"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peckati"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/buy_close"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/buy_menu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/menu"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLoad"
+        android:layout_below="@id/buy_actionBar"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="3dp">
+
+        <ProgressBar
+            android:id="@+id/proLoad"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_gravity="top"
+            android:layout_marginTop="-3dp"
+            android:progressDrawable="@drawable/custom_progress"
+            android:background="@android:color/transparent"
+            android:progress="20"/>
+
+    </FrameLayout>
+
+    <WebView
+        android:id="@+id/buy_webview"
+        android:layout_below="@id/frameLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</RelativeLayout>

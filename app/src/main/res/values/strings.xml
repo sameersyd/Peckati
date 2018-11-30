@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Peckati</string>
+    <string name="title_activity_choose_receiver">ChooseReceiverActivity</string>
+</resources>

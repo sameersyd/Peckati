@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:id="@+id/camerFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/surfaceView"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/avaStoImg"
+            android:visibility="visible"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/imgback_blur"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/homeone_profilepic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#ffffff"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/homeone_searchFriends"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/search"
+        app:layout_constraintBottom_toBottomOf="@id/camerFrag"
+        app:layout_constraintEnd_toEndOf="@id/surfaceView"
+        app:layout_constraintTop_toTopOf="@id/camerFrag" />
+
+    <ImageView
+        android:id="@+id/homeone_captureimage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:clickable="true"
+        android:src="@drawable/capture_image"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/surfaceView"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@id/surfaceView"
+        app:layout_constraintBottom_toBottomOf="@id/surfaceView"
+        android:layout_marginBottom="50dp" />
+
+    <ImageView
+        android:id="@+id/homeone_rotatecamera"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:src="@drawable/rotate_cam"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintTop_toTopOf="@id/homeone_captureimage"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/homeone_captureimage"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toRightOf="@id/homeone_captureimage"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@id/surfaceView" />
+
+    <ImageView
+        android:id="@+id/homeone_chooseGallery"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:src="@drawable/gallery"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintTop_toTopOf="@id/homeone_captureimage"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/homeone_captureimage"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/homeone_captureimage"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toLeftOf="@id/surfaceView" />
+
+</android.support.constraint.ConstraintLayout>
+

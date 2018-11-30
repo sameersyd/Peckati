@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1048587316167",
+    "firebase_url": "https://peckati-dc2a5.firebaseio.com",
+    "project_id": "peckati-dc2a5",
+    "storage_bucket": "peckati-dc2a5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048587316167:android:5f70c67202741770",
+        "android_client_info": {
+          "package_name": "com.haze.sameer.peckati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048587316167-gpdebf5simon2lstjfmgi88isakkuh59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.haze.sameer.peckati",
+            "certificate_hash": "9b2e8a2816fa393d13bcd6280e287159461856f3"
+          }
+        },
+        {
+          "client_id": "1048587316167-1ve6gsbk93d0cus0j5qg67kc7tmllqeq.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1048587316167-1ve6gsbk93d0cus0j5qg67kc7tmllqeq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK-RK2KyQT6EPOiWZzd-VUrR6fSK8nqzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1048587316167-1ve6gsbk93d0cus0j5qg67kc7tmllqeq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

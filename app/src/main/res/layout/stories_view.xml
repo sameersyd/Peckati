@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content">
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:id="@+id/relativeLayout">-->
+
+                <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                    <!--android:id="@+id/story_profilePic"-->
+                    <!--android:layout_width="160dp"-->
+                    <!--android:layout_height="200dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:src="@drawable/sameer"-->
+                    <!--android:scaleType="centerCrop"-->
+                    <!--app:riv_corner_radius="15dip"-->
+                    <!--app:riv_border_color="#333333"-->
+                    <!--app:riv_mutate_background="true"/>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="160dp"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:background="@drawable/storyprofile_design"-->
+                    <!--android:alpha=".9"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_alignBottom="@id/story_profilePic">-->
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/story_profileName"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:fontFamily="sans-serif-condensed"-->
+                            <!--android:text="Sameer Nawaz"-->
+                            <!--android:layout_centerHorizontal="true"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textColor="#1A2C3F"/>-->
+
+                <!--</RelativeLayout>-->
+
+        <!--</RelativeLayout>-->
+
+</RelativeLayout>

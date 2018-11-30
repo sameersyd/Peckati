@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    tools:context=".AddPostActivity">
+
+    <ImageView
+        android:id="@+id/addPost_mainImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:id="@+id/addPost_closeImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/close_white" />
+
+    <ImageView
+        android:id="@+id/addPost_capturedImg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/camera_addpost"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/addPost_chooseImg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/gallery"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/addPost_capturedImg"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <ImageView
+        android:id="@+id/addPost_foodImg"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/food_addpost"
+        android:layout_below="@id/addPost_chooseImg"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp">
+
+        <ImageView
+            android:id="@+id/addPost_addStoryImg"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/addto_story"
+            app:layout_constraintBottom_toBottomOf="@id/addPost_sendLinear"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@id/addPost_sendLinear" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addPost_addStoryImg"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Save To Stories"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/curved_black"
+            android:alpha=".4"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/addPost_sendLinear"
+            android:layout_width="125dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/curved_gradient_btn"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@android:drawable/ic_media_play" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Send To"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

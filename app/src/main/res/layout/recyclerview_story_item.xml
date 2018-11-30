@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/relativeLayout">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/story_profilePic"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="15dip"
+            app:riv_border_color="#333333"
+            app:riv_mutate_background="true"/>
+
+        <RelativeLayout
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/storyprofile_design"
+            android:alpha=".9"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@id/story_profilePic">
+
+            <TextView
+                android:id="@+id/story_profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Sameer Nawaz"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="#1A2C3F"/>
+
+            <TextView
+                android:id="@+id/story_profileNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/story_profileUidTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

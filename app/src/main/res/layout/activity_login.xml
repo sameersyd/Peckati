@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haze.sameer.peckati.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_back"
+        android:scaleType="centerCrop"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relaOneLogin"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            android:background="@drawable/curved_white"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:id="@+id/login_emailLogin"
+                android:background="@drawable/design_edit_text"
+                android:layout_width="match_parent"
+                android:textColor="#354069"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:id="@+id/login_passwordLogin"
+                android:layout_below="@id/login_emailLogin"
+                android:background="@drawable/design_edit_text"
+                android:layout_width="match_parent"
+                android:textColor="#354069"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textCursorDrawable="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/login_forgotTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#354069"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:text="Forgot Password"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/login_passwordLogin"/>
+
+            <Button
+                android:id="@+id/login_loginBtn"
+                android:elevation="6dp"
+                android:background="#354069"
+                android:layout_below="@id/login_forgotTxt"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="60dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:src="@drawable/peckati_text"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/relaOneLogin"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha=".5"/>
+
+        <Button
+            android:id="@+id/login_signup"
+            android:text="Don't have an account already?"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="#00000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

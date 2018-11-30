@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#F5F5F5"
+    tools:context="com.haze.sameer.peckati.PagerActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/section_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"/>
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        android:textColor="#808080"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/section_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/section_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:textStyle="bold"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center"
+        android:textColor="#727272"
+        android:textSize="26sp" />
+
+</RelativeLayout>
